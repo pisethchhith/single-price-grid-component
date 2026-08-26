@@ -1,0 +1,123 @@
+:root {
+    --primary-teal : hsl(179, 62%, 43%);
+    --primary-green : hsl(71, 73%, 54%);
+    --neutral-teal: #4ABCBC;
+    --neutral-gray: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1em;
+    font-family: "Karla", sans-serif;
+    width: 50%;
+    margin: auto;
+    place-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero-header {
+    grid-row: 1 ;
+    grid-column: 1 / 2 span;
+    padding: 3em;
+}
+
+.hero-header h1, .subscription-cta h1, .feature-block h1 {
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+
+.hero-header h1 {
+    color: var(--primary-teal);
+}
+
+.subscription-cta {
+    background-color: var(--primary-teal);
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subscription-cta .price-tags {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.price-tags p {
+    font-size: 3em;
+    font-weight: 700;
+
+}
+
+.feature-block {
+    background-color: var(--neutral-teal);
+    padding: 3em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-block .feature-items {
+    list-style: none;
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.feature-block ul {
+    padding: 1em 0;
+}
+
+.subscription-cta, .feature-block {
+    color: white;
+}
+
+.hero-header h2{
+    font-weight: 700;
+    color: var(--primary-green);
+    padding: 0.75em 0;
+}
+
+.hero-header p {
+    color: var(--neutral-gray);
+    line-height: 1.40em;
+}
+
+.sign-up-btn{
+    text-decoration: none;
+    background-color: var(--primary-green);
+    color: white;
+    text-align: center;
+    padding: 0.75em;
+    border-radius: 0.25em;
+}
+
+.subscription-cta .cta-description {
+    font-weight: 300;
+}
+
+
+/* =================== Footer =================== */
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
