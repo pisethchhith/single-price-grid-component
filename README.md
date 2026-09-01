@@ -18,8 +18,8 @@ This is my solution to the [Single price grid component challenge on Frontend Me
 
 Users should be able to:
 
-[x] View the optimal layout for the component depending on their device's screen size
-[x] See a hover state on desktop for the Sign Up call-to-action
+- [x] View the optimal layout for the component depending on their device's screen size
+- [x] See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
 
@@ -28,14 +28,14 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/pisethchhith/single-price-grid-component)
+- Live Site URL: [Add live site URL here](https://pisethchhith.github.io/single-price-grid-component/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Non-Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-During working on building this challenge, I practice using grid layout, and apply responsive web design using media query rule (@media) for mobile device. It's my first time that I understood well about making responsive web, which I can apply it successfully. 
+During working on building this challenge, I practice using grid layout, and apply responsive web design using media query rule `(@media)` for mobile device. It's my first time that I understood well about making responsive web, which I can apply it successfully. 
 
 This is my first time that I working on responsive web better than my previous work, because I understand why responsive web design is exist and it can apply in any different device more seamlessly without messing up the web layout. 
 
