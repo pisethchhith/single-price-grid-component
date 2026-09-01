@@ -3,7 +3,8 @@
     --primary-green : hsl(71, 73%, 54%);
     --neutral-teal: #4ABCBC;
     --neutral-gray: hsl(218, 22%, 67%);
-}
+    --hover-green: hsla(116, 70%, 47%, 0.369);
+}   
 
 * {
     margin: 0;
@@ -14,9 +15,8 @@
 body {
     min-height: 100vh;
     font-size: 1em;
+    display: grid;
     font-family: "Karla", sans-serif;
-    width: 50%;
-    margin: auto;
     place-content: center;
 }
 
@@ -27,7 +27,9 @@ body {
     border-radius: 0.5em;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: fit-content;
 }
+
 
 .hero-header {
     grid-row: 1 ;
@@ -70,7 +72,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1em;
 }
+
+
 
 .feature-block .feature-items {
     list-style: none;
@@ -79,9 +84,6 @@ body {
     font-weight: 300;
 }
 
-.feature-block ul {
-    padding: 1em 0;
-}
 
 .subscription-cta, .feature-block {
     color: white;
@@ -103,19 +105,41 @@ body {
     background-color: var(--primary-green);
     color: white;
     text-align: center;
-    padding: 0.75em;
+    padding: calc((18/16) * 1em);
     border-radius: 0.25em;
+    transition: background-color 250ms;
+}
+
+.sign-up-btn:hover {
+    background-color: var(--hover-green);
 }
 
 .subscription-cta .cta-description {
     font-weight: 300;
 }
 
+/*           Mobile Device             */
+
+@media (max-width: 768px){
+    .container {
+        margin: 2em;
+        display: flex;
+        flex-direction: column;        
+    }
+    .subscription-cta {
+        gap: 2em;
+    }
+}
+
+
+
+
 
 /* =================== Footer =================== */
 .attribution { 
     font-size: 0.6875rem; 
     text-align: center;
+    margin: 2em 0 0 0 ; 
 }
 
 .attribution a { 
